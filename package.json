@@ -1,0 +1,45 @@
+{
+  "name": "aether-mail",
+  "version": "1.0.0",
+  "description": "Application de bureau locale pour la centralisation de courriels et le suivi de candidatures",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "electron .",
+    "dev": "concurrently -k -s first \"npm run dev --prefix frontend\" \"sleep 2 && electron .\"",
+    "dist": "npm run build --prefix frontend && electron-builder"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^26.15.3"
+  },
+  "build": {
+    "appId": "com.zolak.aethermail",
+    "productName": "Aether Mail",
+    "files": [
+      "frontend/dist/**/*",
+      "backend/**/*",
+      "main.js",
+      "package.json"
+    ],
+    "asarUnpack": [
+      "backend/**/*"
+    ],
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "category": "Network",
+      "icon": "build/icon.png"
+    }
+  },
+  "author": {
+    "name": "Zolak",
+    "email": "zolak@localhost"
+  },
+  "homepage": "https://github.com/zolak/aegis-inbox"
+}

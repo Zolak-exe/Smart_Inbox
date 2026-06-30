@@ -1,0 +1,23 @@
+{
+  "name": "mail-job-tracker-backend",
+  "version": "1.0.0",
+  "description": "Backend pour l'application de centralisation de mails et suivi d'offres",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "imap-simple": "^5.1.0",
+    "mailparser": "^3.7.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
