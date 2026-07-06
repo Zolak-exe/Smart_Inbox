@@ -1,0 +1,52 @@
+# Fichiers de configuration sensibles
+.env
+.env.local
+.env.*
+!.env.example
+!.env.local.example
+*.key
+*.pem
+*.crt
+*.p12
+*.jks
+
+# Base de données
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node.js
+node_modules/
+package-lock.json
+npm-debug.log*
+
+# Build
+/dist
+/build
+/tmp
+/temp
+
+# Local data
+.crush/
+data/
+
