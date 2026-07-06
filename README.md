@@ -1,4 +1,4 @@
-# 📬 Mail Job Tracker
+# 📬 Smart_Inbox
 
 Mail Job Tracker is an Electron-based desktop application designed to automatically scan, categorize, and track job applications by interfacing directly with a local **ProtonMail Bridge** instance via SMTP/IMAP.
 
